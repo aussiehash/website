@@ -2,4 +2,11 @@
 layout: default
 ---
 
-This is a test page.
+<h4>Pages</h4>
+<ul>
+{% for page in site.pages %}
+{% if page.title != '' %}
+	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
