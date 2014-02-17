@@ -5,7 +5,7 @@ layout: default
 <h4>Pages</h4>
 <ul>
 {% for page in site.pages %}
-{% if page.title != '' %}
+{% if page.url != '/index.html' %}
 	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}
 {% endfor %}
